@@ -25,15 +25,15 @@
 # the call make_operation('*', 7, 6) should return 42      
 def make_operation(operator,*args):
   if operator not in("+","-","*"):
-       print("Choose right operator.")               
+      print("Choose right operator.")               
 
   if operator=="+":
       result=sum(args)
     
   elif operator=="-" : 
-       result=args[0]
-       for number in args[1:]:
-         result-=number
+      result=args[0]
+      for number in args[1:]:
+        result-=number
   elif operator == "*":
     result=1   
     for number in args:
